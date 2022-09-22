@@ -12,7 +12,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -31,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-hOUVR6thps)
-- Live Site URL: [Add live site URL here](https://osaode.github.io/Responsive-landing-page-for-an-agency/)
+- Solution URL: [https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-hOUVR6thps]
+- Live Site URL: [https://osaode.github.io/Responsive-landing-page-for-an-agency/]
 
 ## My process
 
@@ -46,40 +45,57 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="hero">
+        <div class="container">
+          <div class="topnav">
+            <img id="logo" src="images/logo.svg" alt="">
+
+            <div class="top-links">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Projects</a>
+              <a href="#">Contact</a>
+            </div>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+          </div>
+
+          <p class="pheader">WE ARE CREATIVES</p>
+          <div class="himg">
+            <img src="images/icon-arrow-down.svg" alt="">
+          </div>
+        </div>
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.one-2{
+    background-image: url("images/desktop/image-transform.jpg");
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 50%;
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    topLinks.classList.toggle("active")
+})
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
 This project was a nice experience. Going forward I'm going to focus more on improving my javascript and work on my css display properties, knowing when and how to use them.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
